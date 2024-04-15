@@ -1,0 +1,77 @@
+.detail-page {
+    font-family: Arial, sans-serif; /* Or any other font you're using */
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.image-side {
+    width: 40%; /* Adjust width as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns images to the left */
+    justify-content: flex-start;
+    position: relative;
+}
+
+.image-side .back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    /* Style your back button as needed */
+}
+
+.image-side img {
+    width: auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.text-side {
+    width: 60%;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-box {
+    background: #fff; /* Or any color that matches your design */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* For a slight shadow, similar to 'experience' boxes */
+    border: 1px solid #ccc; /* Optional, if you want borders */
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.text-side h1, .text-box h2 {
+    text-align: center;
+}
+
+.text-box h2 {
+
+}
+
+.text-box p {
+    /* Paragraph styles */
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.back-button{
+  border: rgb(53, 53, 53) 0.1rem solid;
+  margin-left: 0.5rem;
+
+}
+
+.back-button:hover{
+  cursor: pointer;
+  background: rgb(53, 53, 53);
+  color: white;
+}
